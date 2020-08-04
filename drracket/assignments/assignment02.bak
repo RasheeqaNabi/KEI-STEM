@@ -12,9 +12,9 @@
   (cond
      [( = n 0) (+ m 1)]
      [(= m 0) (ackermann (- n 1)  1)]
-     [ else (and (not (= n 0)) (not(= m 0))) (ackermann ( - n 1)  (ackermann n ( - m 1)))]
+     [ else  (ackermann (( - n 1)  ackermann (n ( - m 1))))]
      ))
-    
+ 
 ;;
 ;; Write a function for the mathematical function
 ;; f(n) = n if n < 3

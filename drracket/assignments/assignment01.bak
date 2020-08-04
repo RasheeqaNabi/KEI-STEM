@@ -1,6 +1,4 @@
 #lang racket
-(require test-engine/racket-tests)
-         
 (provide cube triple rectangle-area square? compare)
 
 ;;
@@ -22,19 +20,13 @@
 ;; Write a predicate to check whether the given length and width is of a square shape.
 ;; Also write a few tests to check if your solution is working for a range of inputs.
 (define (square? length width)
-    (= length width))
-    (check-expect (square? 1 2) #f)
-     (check-expect (square? 4 4) #t)
-      (test)
+   (if ( = length width )))
+
 ;; Write a function compare which is defined as follows
 ;; compare(x, y) = 1 when x > y
 ;; compare(x, y) = 0 when x = y
 ;; compare(x, y) = -1 when x < y
 (define (compare x y)
-  (cond
-    [ (> x y) 1]
-    [ (= x y) 0]
-    [else (< x y) -1]
-    ))
+  0)
 
 

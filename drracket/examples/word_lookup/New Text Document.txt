@@ -1,0 +1,6 @@
++{
+    "credentials": {
+        "app-key": "placeholder_for_app_key",
+        "app-id": "placeholder_for_app_id"
+    }
+}
